@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMILLA MX - Próximamente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #1a1f1e;
+            color: #d4f534;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .logo {
+            margin-bottom: 60px;
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .logo img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+        }
+        
+        .content {
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background-color: rgba(212, 245, 52, 0.1);
+            border: 1px solid #d4f534;
+            border-radius: 50px;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #d4f534;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .tagline {
+                font-size: 1em;
+            }
+            
+            .logo {
+                margin-bottom: 40px;
+            }
+            
+            .logo img {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="SEMILLA MX">
+        </div>
+        
+        <div class="content">
+            <h1>Estamos trabajando en algo especial</h1>
+            <p class="tagline">
+                Preparando nuestra plataforma para ayudar a más agencias de autos<br>
+                a implementar prácticas ecológicas que generan impacto real.
+            </p>
+            
+            <div class="status">
+                <span class="dot"></span>
+                <span>Sitio en construcción</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
